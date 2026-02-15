@@ -15,6 +15,26 @@ header{background:#111827;color:white;padding:20px 8%;display:flex;justify-conte
 .logo img{width:45px;}
 header h1{color:#facc15;font-size:22px;}
 nav a{color:white;text-decoration:none;margin-left:20px;font-weight:500;}
+.language-switcher {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.language-switcher button {
+  background-color: #facc15;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.language-switcher button:hover {
+  background-color: #eab308;
+}
+
 
 /* Hero Section */
 .hero {
@@ -113,6 +133,10 @@ text-decoration:none;
 <a href="#order">अर्डर</a>
 <a href="#contact">सम्पर्क</a>
 </nav>
+    <div class="language-switcher">
+    <button id="nepali-btn">नेपाली</button>
+    <button id="english-btn">English</button>
+  </div>
 </header>
 
 <section class="hero">
@@ -186,8 +210,36 @@ WhatsApp Order गर्नुहोस्
 <!-- WhatsApp Button -->
 <a class="whatsapp" href="https://wa.me/9779805910255" target="_blank">💬</a>
 
+<script>
+// Elements that have English and Nepali content
+const translations = [
+  { selector: 'header h1', nepali: 'जय इलेक्ट्रिकल्स', english: 'Jay Electricals' },
+  { selector: '.hero h2', nepali: 'जय इलेक्ट्रिकल्स एण्ड मर्मत केन्द्र', english: 'Jay Electricals & Repair Center' },
+  { selector: '.hero p', nepali: 'घरायसी तथा व्यवसायिक सम्पूर्ण विद्युतीय सेवा उपलब्ध', english: 'Complete Residential & Commercial Electrical Services Available' },
+  { selector: '.services h2', nepali: 'हाम्रा सेवाहरू', english: 'Our Services' },
+  { selector: '.products h2', nepali: 'उत्पादनहरू (Click गरेर अर्डर गर्नुहोस्)', english: 'Products (Click to Order)' },
+  { selector: '#contact h2', nepali: 'सम्पर्क विवरण', english: 'Contact Information' },
+  { selector: '#contact p', nepali: '📞 फोन: +977-XXXXXXXXXX', english: '📞 Phone: +977-XXXXXXXXXX' },
+  { selector: '#contact p', nepali: '📍 स्थान: तपाईंको क्षेत्र, नेपाल', english: '📍 Location: Your Area, Nepal' },
+  { selector: '#contact p', nepali: '⏰ समय: बिहान ७ बजे – साँझ ७ बजे', english: '⏰ Time: 7 AM – 7 PM' }
+];
+
+document.getElementById('nepali-btn').addEventListener('click', () => {
+  translations.forEach(item => {
+    document.querySelectorAll(item.selector).forEach(el => el.textContent = item.nepali);
+  });
+});
+
+document.getElementById('english-btn').addEventListener('click', () => {
+  translations.forEach(item => {
+    document.querySelectorAll(item.selector).forEach(el => el.textContent = item.english);
+  });
+});
+</script>
+
 </body>
 </html>
+
 
 
 
