@@ -232,16 +232,13 @@ WhatsApp Order गर्नुहोस्
 <a class="whatsapp" href="https://wa.me/9779805910255" target="_blank">💬</a>
 
 <script>
-// All texts to translate
+
 const translations = [
-  // Header
+  
   { selector: '#site-title', nepali: 'जय इलेक्ट्रिकल्स', english: 'Jay Electricals' },
 
-  // Hero
   { selector: '#hero-title', nepali: 'जय इलेक्ट्रिकल्स एण्ड मर्मत केन्द्र', english: 'Jay Electricals & Repair Center' },
   { selector: '#hero-text', nepali: 'घरायसी तथा व्यवसायिक सम्पूर्ण विद्युतीय सेवा उपलब्ध', english: 'Complete Residential & Commercial Electrical Services Available' },
-
-  // Services
   { selector: '#services-title', nepali: 'हाम्रा सेवाहरू', english: 'Our Services' },
   { selector: '#service1', nepali: 'घर वायरिङ', english: 'Home Wiring' },
   { selector: '#service1-desc', nepali: 'सम्पूर्ण घर वायरिङ तथा जडान सेवा।', english: 'Complete home wiring and installation service.' },
@@ -254,7 +251,6 @@ const translations = [
   { selector: '#service5', nepali: 'इनभर्टर जडान', english: 'Inverter Installation' },
   { selector: '#service5-desc', nepali: 'इनभर्टर तथा ब्याट्री जडान।', english: 'Installation of inverters and batteries.' },
 
-  // Products
   { selector: '#products-title', nepali: 'उत्पादनहरू (Click गरेर अर्डर गर्नुहोस्)', english: 'Products (Click to Order)' },
   { selector: '#product1', nepali: 'LED बल्ब', english: 'LED Bulb' },
   { selector: '#product2', nepali: 'Switch', english: 'Switch' },
@@ -263,17 +259,15 @@ const translations = [
   { selector: '#product2-btn', nepali: 'अर्डर गर्नुहोस्', english: 'Order Now' },
   { selector: '#product3-btn', nepali: 'अर्डर गर्नुहोस्', english: 'Order Now' },
 
-  // Contact
   { selector: '#contact-title', nepali: 'सम्पर्क विवरण', english: 'Contact Information' },
   { selector: '#contact-phone', nepali: '📞 फोन: +977-9805910255', english: '📞 Phone: +977-9805910255' },
   { selector: '#contact-location', nepali: '📍 स्थान: धनगढीमाई-१०,सिरहा, नेपाल', english: '📍 Location: Dhangadhimai-10, Siraha, Nepal' },
   { selector: '#contact-time', nepali: '⏰ समय: बिहान ७ बजे – साँझ ७ बजे', english: '⏰ Time: 7 AM – 7 PM' },
 
-  // WhatsApp Button
+
   { selector: '#whatsapp-btn', nepali: 'WhatsApp अर्डर गर्नुहोस्', english: 'WhatsApp Order' }
 ];
 
-// Button Events
 document.getElementById('nepali-btn').addEventListener('click', () => {
   translations.forEach(item => {
     document.querySelector(item.selector).textContent = item.nepali;
@@ -289,6 +283,7 @@ document.getElementById('english-btn').addEventListener('click', () => {
 
 </body>
 </html>
+
 
 
 
