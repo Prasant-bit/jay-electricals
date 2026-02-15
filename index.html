@@ -35,6 +35,17 @@ nav a:hover{text-decoration:underline;}
   color:white;text-align:center;
   padding:120px 20px;
 }
+.hero img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  position:absolute;
+  top:0;left:0;z-index:1;
+}
+.hero h1{
+  position:relative;z-index:2;background:rgba(0,0,0,0.5);padding:20px;border-radius:10px;
+}
+
 
 .section{padding:50px 20px;text-align:center;}
 .cards{
@@ -49,10 +60,8 @@ nav a:hover{text-decoration:underline;}
   box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-.card img{
-  width:100%;height:180px;
-  object-fit:cover;border-radius:8px;
-}
+.card img{width:100%;height:200px;object-fit:cover;display:block;}
+.card h3{padding:15px;}
 
 .btn{
   display:inline-block;margin-top:10px;
@@ -236,5 +245,6 @@ translations.forEach(t=>document.getElementById(t.id).innerText=t.en);
 
 </body>
 </html>
+
 
 
