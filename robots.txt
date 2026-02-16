@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://prasant-bit.github.io/jay-electricals/sitemap.xml
